@@ -17,17 +17,41 @@ namespace DALfile.Repository
 {
     public class AuthenticationDal : IAuthenticationDal
     {
-        public readonly ApplicationContext _dbcontext;
+        public readonly ApplicationContext _dbcontext =null;
         private readonly AppSettings _appSettings;
         public AuthenticationDal(ApplicationContext dbcontext, IOptions<AppSettings> appSettings)
         {
             _dbcontext = dbcontext;
             _appSettings = appSettings.Value;
+
+
         }
-        public async Task<UserModel> Authenticate(AuthenticateRequest model)
+
+        public   AuthenticateResponse Authenticate(AuthenticateRequest model)
         {
-            UserModel lst = await _dbcontext.Users.Where(x => x.UserName == model.Username && x.Password == model.Password).FirstOrDefaultAsync();
-            return lst;
+            var response = _dbcontext.Users.SingleOrDefault(x => x.UserName == model.Username && x.Password == model.Password);
+            if (response == null) return null;
+            //If authentication is successful
+            var token = GenerateToken(response);
+            return new AuthenticateResponse(response, token);
+
         }
+
+        public string GenerateToken(UserModel user)
+        {
+            // generate token that is valid for 7 days
+            var tokenHandler = new JwtSecurityTokenHandler();
+            var key = Encoding.ASCII.GetBytes(_appSettings.Secret);
+            var tokenDescriptor = new SecurityTokenDescriptor
+            {
+                Subject = new ClaimsIdentity(new[] { new Claim("id", user.Id.ToString()) }),
+                Expires = DateTime.UtcNow.AddDays(7),
+                SigningCredentials = new SigningCredentials(new SymmetricSecurityKey(key), SecurityAlgorithms.HmacSha256Signature)
+            };
+            var token = tokenHandler.CreateToken(tokenDescriptor);
+            return tokenHandler.WriteToken(token);
+        }
+
+
     }
 }

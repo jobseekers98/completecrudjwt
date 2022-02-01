@@ -6,7 +6,7 @@ namespace MODELfile
     public class UserModel
     {
         [Key]
-        public int Id { get; set; }
+        public int? Id { get; set; }
         [Required]
         public string FirstName { get; set; }
         [Required]
@@ -15,7 +15,7 @@ namespace MODELfile
         public string UserName { get; set; }
         [Required]
         public string Password { get; set; }
-        public string Token { get; set; }
+      
 
     }
 }

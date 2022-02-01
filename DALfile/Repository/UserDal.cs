@@ -59,7 +59,8 @@ namespace DALfile.Repository
                 throw ex;
             }
             return result;
-        }       
+        }   
+        
         public async Task<int> DeleteUser(int userId)
         {
             int result=0;

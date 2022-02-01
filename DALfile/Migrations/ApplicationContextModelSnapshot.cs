@@ -18,7 +18,7 @@ namespace DALfile.Migrations
                 .HasAnnotation("Relational:MaxIdentifierLength", 128)
                 .HasAnnotation("ProductVersion", "5.0.4");
 
-            modelBuilder.Entity("MODELfile.User", b =>
+            modelBuilder.Entity("MODELfile.UserModel", b =>
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
@@ -35,6 +35,9 @@ namespace DALfile.Migrations
 
                     b.Property<string>("Password")
                         .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Token")
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("UserName")

@@ -1,13 +1,20 @@
 ﻿using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.IdentityModel.Tokens;
 using MODELfile;
 using MODELfile.Authenticate;
 using Servicefile.IRepository.IAuthentication;
 using Servicefile.IRepository.IUser;
 using System;
 using System.Collections.Generic;
+using System.IdentityModel.Tokens.Jwt;
 using System.Linq;
+using System.Security.Claims;
+using System.Text;
 using System.Threading.Tasks;
+
+
+
 
 namespace Jwt_Authentication.Controllers
 {
@@ -23,19 +30,16 @@ namespace Jwt_Authentication.Controllers
 
         [HttpPost]
         [Route("login")]
-        public async Task<UserModel> Authenticate(AuthenticateRequest model)
+        public IActionResult Authenticate(AuthenticateRequest model)
         {
-            UserModel response = await _IauthenticationService.Authenticate(model);
-            if (response != null)
-            {
-                response.Token = _IauthenticationService.GenerateToken(response);
-            }
-            else
-            {
-                //return BadRequest(new { message = "Username or password is incorrect" });
-                throw new Exception("Username or password is incorrect");
-            }
-            return response;
+            var response = _IauthenticationService.Authenticate(model);
+            if (response == null)                           
+                return BadRequest(new { message="Username or password is incorrect" });
+            
+            return Ok(response);
         }
+
+
+        
     }
 }

@@ -25,23 +25,18 @@ namespace Servicefile.Repository.Authentication
             _appSettings = appSettings.Value;
             _IauthenticationDal = IauthenticationDal;
         }
-        public async Task<UserModel> Authenticate(AuthenticateRequest model)
+        public AuthenticateResponse Authenticate(AuthenticateRequest model)
         {
-            return await _IauthenticationDal.Authenticate(model);
+            return  _IauthenticationDal.Authenticate(model);
+            
+
+
+
         }
-        public string GenerateToken(UserModel user)
-        {
-            // generate token that is valid for 7 days
-            var tokenHandler = new JwtSecurityTokenHandler();
-            var key = Encoding.ASCII.GetBytes(_appSettings.Secret);
-            var tokenDescriptor = new SecurityTokenDescriptor
-            {
-                Subject = new ClaimsIdentity(new[] { new Claim("id", user.Id.ToString()) }),
-                Expires = DateTime.UtcNow.AddDays(7),
-                SigningCredentials = new SigningCredentials(new SymmetricSecurityKey(key), SecurityAlgorithms.HmacSha256Signature)
-            };
-            var token = tokenHandler.CreateToken(tokenDescriptor);
-            return tokenHandler.WriteToken(token);
-        }
+
+      
+
+       
+
     }
 }

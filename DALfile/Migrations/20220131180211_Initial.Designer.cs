@@ -9,8 +9,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace DALfile.Migrations
 {
     [DbContext(typeof(ApplicationContext))]
-    [Migration("20220131045544_Intial")]
-    partial class Intial
+    [Migration("20220131180211_Initial")]
+    partial class Initial
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
@@ -20,7 +20,7 @@ namespace DALfile.Migrations
                 .HasAnnotation("Relational:MaxIdentifierLength", 128)
                 .HasAnnotation("ProductVersion", "5.0.4");
 
-            modelBuilder.Entity("MODELfile.User", b =>
+            modelBuilder.Entity("MODELfile.UserModel", b =>
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
@@ -37,6 +37,9 @@ namespace DALfile.Migrations
 
                     b.Property<string>("Password")
                         .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Token")
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("UserName")

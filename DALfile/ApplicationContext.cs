@@ -13,6 +13,5 @@ namespace DALfile
         }
         public DbSet<UserModel> Users { get; set; }
 
-
     }
 }

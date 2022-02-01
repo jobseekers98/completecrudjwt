@@ -170,3 +170,13 @@ C:\Projects\JwtApi\jwt_authentication-master\obj\Debug\netcoreapp3.1\Jwt_Authent
 C:\Projects\JwtApi\jwt_authentication-master\obj\Debug\netcoreapp3.1\Jwt_Authentication.dll
 C:\Projects\JwtApi\jwt_authentication-master\obj\Debug\netcoreapp3.1\Jwt_Authentication.pdb
 C:\Projects\JwtApi\jwt_authentication-master\obj\Debug\netcoreapp3.1\Jwt_Authentication.genruntimeconfig.cache
+C:\Projects\JwtApi\jwt_authentication-master\bin\Debug\netcoreapp3.1\Microsoft.OpenApi.dll
+C:\Projects\JwtApi\jwt_authentication-master\bin\Debug\netcoreapp3.1\Swashbuckle.AspNetCore.Swagger.dll
+C:\Projects\JwtApi\jwt_authentication-master\bin\Debug\netcoreapp3.1\Swashbuckle.AspNetCore.SwaggerGen.dll
+C:\Projects\JwtApi\jwt_authentication-master\bin\Debug\netcoreapp3.1\Swashbuckle.AspNetCore.SwaggerUI.dll
+C:\Projects\JwtApi\jwt_authentication-master\bin\Debug\netcoreapp3.1\System.Data.SqlClient.dll
+C:\Projects\JwtApi\jwt_authentication-master\bin\Debug\netcoreapp3.1\runtimes\win-arm64\native\sni.dll
+C:\Projects\JwtApi\jwt_authentication-master\bin\Debug\netcoreapp3.1\runtimes\win-x64\native\sni.dll
+C:\Projects\JwtApi\jwt_authentication-master\bin\Debug\netcoreapp3.1\runtimes\win-x86\native\sni.dll
+C:\Projects\JwtApi\jwt_authentication-master\bin\Debug\netcoreapp3.1\runtimes\unix\lib\netcoreapp2.1\System.Data.SqlClient.dll
+C:\Projects\JwtApi\jwt_authentication-master\bin\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp2.1\System.Data.SqlClient.dll

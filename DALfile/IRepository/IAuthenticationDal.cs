@@ -7,6 +7,7 @@ namespace DALfile.IRepository
 {
     public interface IAuthenticationDal
     {
-        Task<UserModel> Authenticate(AuthenticateRequest model);
+         AuthenticateResponse Authenticate(AuthenticateRequest model);
+          public string GenerateToken(UserModel user);
     }
 }

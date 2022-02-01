@@ -37,16 +37,30 @@ namespace Jwt_Authentication
             services.AddCors();
             services.AddControllers();
             services.AddControllersWithViews();
+            //services.AddEndpointsApiExplorer();
+
+            //services.AddDbContext<ApplicationContext>(options =>
+            //{
+            //    options.UseSqlServer(Configuration.GetConnectionString("Connect")),ServiceLifetime.Transient;
+            //});
             services.AddDbContext<ApplicationContext>(options =>
-            {
-                options.UseSqlServer(Configuration.GetConnectionString("Connect"));
-            });
+                        options.UseSqlServer(Configuration.GetConnectionString("Connect")),
+             ServiceLifetime.Transient);
 
             services.Configure<AppSettings>(Configuration.GetSection("AppSettings"));
-            services.AddScoped<IUserService, UserService>();
-            services.AddScoped<IUserDal, UserDal>();
-            services.AddScoped<IAuthenticationDal, AuthenticationDal>();
-            services.AddScoped<IAuthenticationService, AuthenticationService>();
+            services.AddTransient<IUserService, UserService>();
+            services.AddTransient<IUserDal, UserDal>();
+            services.AddTransient<IAuthenticationDal, AuthenticationDal>();
+            services.AddTransient<IAuthenticationService, AuthenticationService>();
+            services.AddSwaggerGen(options =>
+            {
+                options.SwaggerDoc("v2", new Microsoft.OpenApi.Models.OpenApiInfo
+                {
+                    Title = "Place Info Service API",
+                    Version = "v2",
+                    Description = "Sample service for Learner",
+                });
+            });
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -55,6 +69,7 @@ namespace Jwt_Authentication
             if (env.IsDevelopment())
             {
                 app.UseDeveloperExceptionPage();
+                
             }
             else
             {
@@ -82,6 +97,8 @@ namespace Jwt_Authentication
                     name: "default",
                     pattern: "{controller=Home}/{action=Index}/{id?}");
             });
+            app.UseSwagger();
+            app.UseSwaggerUI(options => options.SwaggerEndpoint("/swagger/v2/swagger.json", "PlaceInfo Services"));
         }
     }
 }
