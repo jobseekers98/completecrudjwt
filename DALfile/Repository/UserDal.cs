@@ -21,7 +21,6 @@ namespace DALfile.Repository
             List<UserModel> lst = new List<UserModel>();
             if (userId == null)
             {
-                //ytetyey;
                 lst = await _dbcontext.Users.ToListAsync();
             }
             else

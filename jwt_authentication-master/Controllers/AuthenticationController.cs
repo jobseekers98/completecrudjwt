@@ -36,7 +36,7 @@ namespace Jwt_Authentication.Controllers
             var response = _IauthenticationService.Authenticate(model);
 
             if (response == null)
-                return BadRequest(new { message = "Username and password is incorrect" });
+                return BadRequest(new { message = "Username or password is incorrect" });
 
             return Ok(response);
             //if (response.RoleName == "User")
