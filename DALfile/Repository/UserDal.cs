@@ -21,24 +21,27 @@ namespace DALfile.Repository
             List<UserModel> lst = new List<UserModel>();
             if (userId == null)
             {
+                ytetyey;
                 lst = await _dbcontext.Users.ToListAsync();
             }
             else
             {
+               
                 lst = await _dbcontext.Users.Where(x => x.Id == userId).ToListAsync();
+                
             }
 
             return lst;
         }
         public async Task<int> AddUpdateUser(UserModel user)
         {
-            int result=0;
+            int result = 0;
             try
             {
                 if (user.Id == null)
                 {
                     _dbcontext.Add(user);
-                   result =  await _dbcontext.SaveChangesAsync();
+                    result = await _dbcontext.SaveChangesAsync();
                 }
                 else
                 {
@@ -59,21 +62,37 @@ namespace DALfile.Repository
                 throw ex;
             }
             return result;
-        }   
-        
+        }
+
         public async Task<int> DeleteUser(int userId)
         {
-            int result=0;
+            int result = 0;
             if (userId > 0)
             {
                 var studentbyid = _dbcontext.Users.Where(x => x.Id == userId).FirstOrDefault();
                 if (studentbyid != null)
                 {
                     _dbcontext.Entry(studentbyid).State = EntityState.Deleted;
-                    result = _dbcontext.SaveChanges();
+                    result = await _dbcontext.SaveChangesAsync();
                 }
             }
             return result;
+
+
+        }
+
+        public async Task<bool> ErrorLog(Exception ex)
+        {
+            Logtable logtable = new Logtable()
+            {
+                Application = "",
+                ErrorMessage = ex.Message,
+                ErrorDetails = Convert.ToString(ex.InnerException),
+                ExtraInformation = ex.StackTrace
+            };
+            _dbcontext.Add(logtable);
+            await _dbcontext.SaveChangesAsync();
+            return true;
         }
     }
 }

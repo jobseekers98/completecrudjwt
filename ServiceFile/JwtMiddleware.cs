@@ -1,10 +1,11 @@
-﻿using Microsoft.AspNetCore.Http;
+﻿using DALfile;
+using Microsoft.AspNetCore.Http;
 using Microsoft.Extensions.Options;
 using Microsoft.IdentityModel.Tokens;
+using MODELfile;
 using MODELfile.Helpers;
 using Servicefile.IRepository.IUser;
 using System;
-using System.Collections.Generic;
 using System.IdentityModel.Tokens.Jwt;
 using System.Linq;
 using System.Text;
@@ -29,8 +30,15 @@ namespace Servicefile
 
             if (token != null)
                 attachUserToContext(context, userService, token);
+            try
+            {
+                await _next(context);
+            }
+            catch (Exception ex)
+            {
+                await userService.ErrorLog(ex);
+            }
 
-            await _next(context);
         }
 
         private void attachUserToContext(HttpContext context, IUserService userService, string token)
@@ -51,7 +59,7 @@ namespace Servicefile
 
                 var jwtToken = (JwtSecurityToken)validatedToken;
                 var userId = int.Parse(jwtToken.Claims.First(x => x.Type == "id").Value);
-                if (userId != null)
+                if (userId != 0)
                 {
                     // attach user to context on successful jwt validation
                     context.Items["User"] = userService.GetUserDetail(userId);
@@ -61,7 +69,7 @@ namespace Servicefile
                     throw new Exception("Issue in JWT creation");
                 }
             }
-            catch(Exception ex)
+            catch (Exception ex)
             {
                 throw (ex);
             }

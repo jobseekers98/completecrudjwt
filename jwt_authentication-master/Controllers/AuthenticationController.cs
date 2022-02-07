@@ -11,7 +11,7 @@ using System.IdentityModel.Tokens.Jwt;
 using System.Linq;
 using System.Security.Claims;
 using System.Text;
-using System.Threading.Tasks;
+using System.Threading.Tasks;                                                                     
 
 
 
@@ -28,18 +28,33 @@ namespace Jwt_Authentication.Controllers
             _IauthenticationService = IauthenticationService;
         }
 
-        [HttpPost]
+        [HttpPost]                                  
         [Route("login")]
         public IActionResult Authenticate(AuthenticateRequest model)
         {
+          
             var response = _IauthenticationService.Authenticate(model);
-            if (response == null)                           
-                return BadRequest(new { message="Username or password is incorrect" });
-            
+
+            if (response == null)
+                return BadRequest(new { message = "Username or password is incorrect" });
+
             return Ok(response);
+            //if (response.RoleName == "User")
+            //{
+            //    //return Ok(response);
+            //    return RedirectToAction("DashBoard");
+            //}
+            //else if(response.RoleName == "Admin")
+            //{
+            //    return RedirectToAction("Users");
+            //}
+            //else 
+            //{
+            //    return BadRequest(new { message = "Username or password is incorrect" });
+            //}
+
+
         }
 
-
-        
     }
 }

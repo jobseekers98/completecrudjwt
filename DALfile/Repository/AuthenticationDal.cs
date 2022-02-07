@@ -29,11 +29,18 @@ namespace DALfile.Repository
 
         public   AuthenticateResponse Authenticate(AuthenticateRequest model)
         {
-            var response = _dbcontext.Users.SingleOrDefault(x => x.UserName == model.Username && x.Password == model.Password);
+         
+            var response = _dbcontext.Users.FirstOrDefault(x => x.UserName == model.Username && x.Password == model.Password);
+            var userRole = _dbcontext.UserRoles.Where(x => x.UID == response.Id).FirstOrDefault();
+            var rolemodel = _dbcontext.Roles.Where(x => x.RoleID == userRole.RoleID).FirstOrDefault();
+
+             
+
             if (response == null) return null;
+            Role role=new Role();
             //If authentication is successful
             var token = GenerateToken(response);
-            return new AuthenticateResponse(response, token);
+            return new AuthenticateResponse(response, token, rolemodel);
 
         }
 

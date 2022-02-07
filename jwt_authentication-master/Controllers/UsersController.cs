@@ -36,7 +36,8 @@ namespace Jwt_Authentication.Controllers
             return result;
         }
 
-       // [Authorize]
+
+        [Authorize]
         [HttpDelete]
         [Route("DeleteUser")]
         public async Task<int> DeleteUser(int userId)

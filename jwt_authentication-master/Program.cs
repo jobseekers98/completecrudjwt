@@ -14,8 +14,6 @@ namespace Jwt_Authentication
         public static void Main(string[] args)
         {
             CreateHostBuilder(args).Build().Run();
-
-
         }
 
         public static IHostBuilder CreateHostBuilder(string[] args) =>
@@ -23,14 +21,7 @@ namespace Jwt_Authentication
                 .ConfigureWebHostDefaults(webBuilder =>
                 {
                     webBuilder.UseStartup<Startup>().UseUrls("https://localhost:44386");
-
-
-
                 });
-
-
-
-
     }
 
 

@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "c9AUxzF7lOKrzP3wkhCDt42uGXipfS5sZ91AyUsXUGJxjn0lsDhFjQSulrEXLzZ7uCR0ucz63m2Q42sJXzgB6g==",
+  "dgSpecHash": "ayzu9edpgyPax7Fgf7zkerbpc8RRgGSL6pKpq67VnrXg86otMhV06WZi+Fx1GVN6En50CqUCuk/2b9frgXHIKg==",
   "success": true,
   "projectFilePath": "C:\\Projects\\JwtApi\\DALfile\\DALfile.csproj",
   "expectedPackageFiles": [
@@ -36,6 +36,8 @@
     "C:\\Users\\satyamp\\.nuget\\packages\\microsoft.win32.registry\\4.7.0\\microsoft.win32.registry.4.7.0.nupkg.sha512",
     "C:\\Users\\satyamp\\.nuget\\packages\\microsoft.win32.systemevents\\4.7.0\\microsoft.win32.systemevents.4.7.0.nupkg.sha512",
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\newtonsoft.json\\10.0.1\\newtonsoft.json.10.0.1.nupkg.sha512",
+    "C:\\Users\\satyamp\\.nuget\\packages\\nlog\\4.7.11\\nlog.4.7.11.nupkg.sha512",
+    "C:\\Users\\satyamp\\.nuget\\packages\\nlog.extensions.logging\\1.7.4\\nlog.extensions.logging.1.7.4.nupkg.sha512",
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\runtime.native.system\\4.3.0\\runtime.native.system.4.3.0.nupkg.sha512",
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\system.collections\\4.3.0\\system.collections.4.3.0.nupkg.sha512",
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\system.collections.concurrent\\4.3.0\\system.collections.concurrent.4.3.0.nupkg.sha512",

@@ -87,7 +87,6 @@ C:\Projects\JwtApi\jwt_authentication-master\obj\Debug\netcoreapp3.1\Jwt_Authent
 C:\Projects\JwtApi\jwt_authentication-master\obj\Debug\netcoreapp3.1\Jwt_Authentication.AssemblyInfoInputs.cache
 C:\Projects\JwtApi\jwt_authentication-master\obj\Debug\netcoreapp3.1\Jwt_Authentication.AssemblyInfo.cs
 C:\Projects\JwtApi\jwt_authentication-master\obj\Debug\netcoreapp3.1\Jwt_Authentication.csproj.CoreCompileInputs.cache
-C:\Projects\JwtApi\jwt_authentication-master\obj\Debug\netcoreapp3.1\Jwt_Authentication.MvcApplicationPartsAssemblyInfo.cs
 C:\Projects\JwtApi\jwt_authentication-master\obj\Debug\netcoreapp3.1\Jwt_Authentication.MvcApplicationPartsAssemblyInfo.cache
 C:\Projects\JwtApi\jwt_authentication-master\obj\Debug\netcoreapp3.1\Jwt_Authentication.RazorAssemblyInfo.cache
 C:\Projects\JwtApi\jwt_authentication-master\obj\Debug\netcoreapp3.1\Jwt_Authentication.RazorAssemblyInfo.cs
@@ -180,3 +179,6 @@ C:\Projects\JwtApi\jwt_authentication-master\bin\Debug\netcoreapp3.1\runtimes\wi
 C:\Projects\JwtApi\jwt_authentication-master\bin\Debug\netcoreapp3.1\runtimes\win-x86\native\sni.dll
 C:\Projects\JwtApi\jwt_authentication-master\bin\Debug\netcoreapp3.1\runtimes\unix\lib\netcoreapp2.1\System.Data.SqlClient.dll
 C:\Projects\JwtApi\jwt_authentication-master\bin\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp2.1\System.Data.SqlClient.dll
+C:\Projects\JwtApi\jwt_authentication-master\bin\Debug\netcoreapp3.1\NLog.dll
+C:\Projects\JwtApi\jwt_authentication-master\bin\Debug\netcoreapp3.1\NLog.Extensions.Logging.dll
+C:\Projects\JwtApi\jwt_authentication-master\obj\Debug\netcoreapp3.1\Jwt_Authentication.MvcApplicationPartsAssemblyInfo.cs

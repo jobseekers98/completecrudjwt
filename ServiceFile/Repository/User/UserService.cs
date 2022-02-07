@@ -26,5 +26,10 @@ namespace Servicefile.Repository.User
         {
             return await _userDal.DeleteUser(userId);
         }
+        public async Task<bool> ErrorLog(Exception ex)
+        {
+            return await _userDal.ErrorLog(ex);
+        }
+
     }
 }

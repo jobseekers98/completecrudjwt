@@ -13,13 +13,20 @@ namespace MODELfile.Authenticate
         public string Username { get; set; }
         public string Token { get; set; }
 
-        public AuthenticateResponse(UserModel user, string token)
+        public string RoleName { get; set; }
+ 
+
+
+
+        public AuthenticateResponse(UserModel user, string token,Role role)
         {
             Id = user.Id;
             FirstName = user.FirstName;
             LastName = user.LastName;
             Username = user.UserName;
             Token = token;
+            RoleName = role.RoleName;
+
         }
     }
 }
