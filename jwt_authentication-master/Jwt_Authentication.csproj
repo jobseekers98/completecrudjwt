@@ -24,4 +24,8 @@
     <ProjectReference Include="..\ServiceFile\ServiceFile.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="NewFolder\" />
+  </ItemGroup>
+
 </Project>

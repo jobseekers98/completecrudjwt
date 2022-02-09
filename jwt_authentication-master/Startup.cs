@@ -53,6 +53,10 @@ namespace Jwt_Authentication
             services.AddTransient<IUserDal, UserDal>();
             services.AddTransient<IAuthenticationDal, AuthenticationDal>();
             services.AddTransient<IAuthenticationService, AuthenticationService>();
+            services.Configure<IISOptions>(options =>
+            {
+                options.AutomaticAuthentication = false;
+            });
             services.AddSwaggerGen(options =>
             {
                 options.SwaggerDoc("v2", new Microsoft.OpenApi.Models.OpenApiInfo

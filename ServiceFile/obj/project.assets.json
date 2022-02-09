@@ -5900,11 +5900,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Projects\\JwtApi\\ServiceFile\\ServiceFile.csproj",
+      "projectUniqueName": "D:\\WebApi\\completecrudjwt\\ServiceFile\\ServiceFile.csproj",
       "projectName": "ServiceFile",
-      "projectPath": "C:\\Projects\\JwtApi\\ServiceFile\\ServiceFile.csproj",
+      "projectPath": "D:\\WebApi\\completecrudjwt\\ServiceFile\\ServiceFile.csproj",
       "packagesPath": "C:\\Users\\satyamp\\.nuget\\packages\\",
-      "outputPath": "C:\\Projects\\JwtApi\\ServiceFile\\obj\\",
+      "outputPath": "D:\\WebApi\\completecrudjwt\\ServiceFile\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
@@ -5926,11 +5926,11 @@
         "netcoreapp3.1": {
           "targetAlias": "netcoreapp3.1",
           "projectReferences": {
-            "C:\\Projects\\JwtApi\\DALfile\\DALfile.csproj": {
-              "projectPath": "C:\\Projects\\JwtApi\\DALfile\\DALfile.csproj"
+            "D:\\WebApi\\completecrudjwt\\DALfile\\DALfile.csproj": {
+              "projectPath": "D:\\WebApi\\completecrudjwt\\DALfile\\DALfile.csproj"
             },
-            "C:\\Projects\\JwtApi\\MODELfile\\MODELfile.csproj": {
-              "projectPath": "C:\\Projects\\JwtApi\\MODELfile\\MODELfile.csproj"
+            "D:\\WebApi\\completecrudjwt\\MODELfile\\MODELfile.csproj": {
+              "projectPath": "D:\\WebApi\\completecrudjwt\\MODELfile\\MODELfile.csproj"
             }
           }
         }

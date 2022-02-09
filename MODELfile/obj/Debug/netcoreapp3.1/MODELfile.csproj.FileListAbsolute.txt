@@ -30,3 +30,16 @@ C:\Projects\JwtApi\MODELfile\obj\Debug\netcoreapp3.1\MODELfile.csproj.CoreCompil
 C:\Projects\JwtApi\MODELfile\obj\Debug\netcoreapp3.1\MODELfile.dll
 C:\Projects\JwtApi\MODELfile\obj\Debug\netcoreapp3.1\MODELfile.pdb
 C:\Projects\JwtApi\MODELfile\obj\Debug\netcoreapp3.1\MODELfile.genruntimeconfig.cache
+D:\WebApi\completecrudjwt\MODELfile\bin\Debug\netcoreapp3.1\MODELfile.deps.json
+D:\WebApi\completecrudjwt\MODELfile\bin\Debug\netcoreapp3.1\MODELfile.runtimeconfig.json
+D:\WebApi\completecrudjwt\MODELfile\bin\Debug\netcoreapp3.1\MODELfile.runtimeconfig.dev.json
+D:\WebApi\completecrudjwt\MODELfile\bin\Debug\netcoreapp3.1\MODELfile.dll
+D:\WebApi\completecrudjwt\MODELfile\bin\Debug\netcoreapp3.1\MODELfile.pdb
+D:\WebApi\completecrudjwt\MODELfile\obj\Debug\netcoreapp3.1\MODELfile.GeneratedMSBuildEditorConfig.editorconfig
+D:\WebApi\completecrudjwt\MODELfile\obj\Debug\netcoreapp3.1\MODELfile.AssemblyInfoInputs.cache
+D:\WebApi\completecrudjwt\MODELfile\obj\Debug\netcoreapp3.1\MODELfile.AssemblyInfo.cs
+D:\WebApi\completecrudjwt\MODELfile\obj\Debug\netcoreapp3.1\MODELfile.csproj.CoreCompileInputs.cache
+D:\WebApi\completecrudjwt\MODELfile\obj\Debug\netcoreapp3.1\MODELfile.dll
+D:\WebApi\completecrudjwt\MODELfile\obj\Debug\netcoreapp3.1\MODELfile.pdb
+D:\WebApi\completecrudjwt\MODELfile\obj\Debug\netcoreapp3.1\MODELfile.genruntimeconfig.cache
+D:\WebApi\completecrudjwt\MODELfile\obj\Debug\netcoreapp3.1\MODELfile.csproj.AssemblyReference.cache

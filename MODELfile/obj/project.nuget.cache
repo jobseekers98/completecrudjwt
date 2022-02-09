@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "No1UHZYXQvvjIjrli4L4nvU711eqoksFp80o2Qmfg990UpbzCwhr+qsBN/SQKtK4+De8GbP2hFGVTw8vYcR1tg==",
+  "dgSpecHash": "IGG9lgxdFmGpCsTuSxaD91h5kzMVXQXC5N2yHfOS8h4XcvMagpbk/HGtWDZaTiqpNJlCKAMosRm/7HYzbhIbLg==",
   "success": true,
-  "projectFilePath": "C:\\Projects\\JwtApi\\MODELfile\\MODELfile.csproj",
+  "projectFilePath": "D:\\WebApi\\completecrudjwt\\MODELfile\\MODELfile.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\satyamp\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\satyamp\\.nuget\\packages\\microsoft.aspnetcore.authentication.jwtbearer\\3.1.11\\microsoft.aspnetcore.authentication.jwtbearer.3.1.11.nupkg.sha512",

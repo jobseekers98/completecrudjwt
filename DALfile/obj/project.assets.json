@@ -5925,11 +5925,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Projects\\JwtApi\\DALfile\\DALfile.csproj",
+      "projectUniqueName": "D:\\WebApi\\completecrudjwt\\DALfile\\DALfile.csproj",
       "projectName": "DALfile",
-      "projectPath": "C:\\Projects\\JwtApi\\DALfile\\DALfile.csproj",
+      "projectPath": "D:\\WebApi\\completecrudjwt\\DALfile\\DALfile.csproj",
       "packagesPath": "C:\\Users\\satyamp\\.nuget\\packages\\",
-      "outputPath": "C:\\Projects\\JwtApi\\DALfile\\obj\\",
+      "outputPath": "D:\\WebApi\\completecrudjwt\\DALfile\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
@@ -5951,8 +5951,8 @@
         "netcoreapp3.1": {
           "targetAlias": "netcoreapp3.1",
           "projectReferences": {
-            "C:\\Projects\\JwtApi\\MODELfile\\MODELfile.csproj": {
-              "projectPath": "C:\\Projects\\JwtApi\\MODELfile\\MODELfile.csproj"
+            "D:\\WebApi\\completecrudjwt\\MODELfile\\MODELfile.csproj": {
+              "projectPath": "D:\\WebApi\\completecrudjwt\\MODELfile\\MODELfile.csproj"
             }
           }
         }

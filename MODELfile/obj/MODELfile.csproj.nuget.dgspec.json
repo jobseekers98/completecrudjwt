@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Projects\\JwtApi\\MODELfile\\MODELfile.csproj": {}
+    "D:\\WebApi\\completecrudjwt\\MODELfile\\MODELfile.csproj": {}
   },
   "projects": {
-    "C:\\Projects\\JwtApi\\MODELfile\\MODELfile.csproj": {
+    "D:\\WebApi\\completecrudjwt\\MODELfile\\MODELfile.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Projects\\JwtApi\\MODELfile\\MODELfile.csproj",
+        "projectUniqueName": "D:\\WebApi\\completecrudjwt\\MODELfile\\MODELfile.csproj",
         "projectName": "MODELfile",
-        "projectPath": "C:\\Projects\\JwtApi\\MODELfile\\MODELfile.csproj",
+        "projectPath": "D:\\WebApi\\completecrudjwt\\MODELfile\\MODELfile.csproj",
         "packagesPath": "C:\\Users\\satyamp\\.nuget\\packages\\",
-        "outputPath": "C:\\Projects\\JwtApi\\MODELfile\\obj\\",
+        "outputPath": "D:\\WebApi\\completecrudjwt\\MODELfile\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
